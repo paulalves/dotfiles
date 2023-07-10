@@ -1,0 +1,13 @@
+# ssh-keygen -t ed25519 -C "paulalves@protonmail.com"
+
+Host github.com-paulalves
+  HostName github.com
+  IdentityFile ~/.ssh/paulalves_id
+  IdentitiesOnly yes
+
+# ssh-keygen -t ed25519 -C "pa@[work].cc"
+
+# Host github.com-[work]
+#   HostName github.com
+#   IdentityFile ~/.ssh/[work]_id
+#   IdentitiesOnly yes 
