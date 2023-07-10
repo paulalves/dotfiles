@@ -1,0 +1,16 @@
+alacritty
+caffeine
+drawio
+typora
+vlc
+spotify
+slack
+vscodium
+beyond-compare
+signal
+jetbrains-toolbox
+openjdk
+google-chrome
+notion
+tower
+fork
