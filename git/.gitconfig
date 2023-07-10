@@ -1,0 +1,30 @@
+[user]
+  name  = Paul Alves
+  email = paulalves@protonmail.com
+
+[core]
+  editor     = nvim
+	trustctime = false
+  whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+[apply]
+	whitespace = fix
+
+[diff]
+  tool    = bcomp 
+	renames = copies
+[difftool] 
+  prompt = false
+
+[difftool "bcomp"]
+  trustExitCode = true
+
+[help]
+	autocorrect = 1
+
+[merge]
+	log = true
+
+[push]
+	default = simple
+	autoSetupRemote = true
