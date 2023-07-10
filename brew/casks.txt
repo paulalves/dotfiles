@@ -14,3 +14,4 @@ google-chrome
 notion
 tower
 fork
+1password
