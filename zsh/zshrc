@@ -20,7 +20,7 @@ else
   export EDITOR='nvim'
 fi
 
-ZPLUG_HOME=~/.zplug/
+ZPLUG_HOME=/opt/homebrew/opt/zplug
 
 source $ZPLUG_HOME/init.zsh
 
@@ -64,5 +64,8 @@ if zplug check "zsh-users/zsh-history-substring-search"; then
     bindkey "$terminfo[cud1]" history-substring-search-down
   fi
 fi
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
 eval "$(starship init zsh)"
