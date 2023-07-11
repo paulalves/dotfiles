@@ -5,6 +5,9 @@ font:
 
 window:
   decorations: full
+  padding:
+    x: 5
+    y: 5
 
 colors:
   primary:
