@@ -15,3 +15,9 @@ notion
 tower
 fork
 1password
+proxyman
+micro-snitch
+little-snitch
+devutils
+teacode
+sidenotes
