@@ -32,3 +32,9 @@ scala
 maven
 antlr
 zplug
+starship
+rust
+luarocks
+lua-language-server
+tree-sitter
+gh

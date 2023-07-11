@@ -21,3 +21,4 @@ little-snitch
 devutils
 teacode
 sidenotes
+github

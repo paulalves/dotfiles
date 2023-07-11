@@ -1,13 +1,17 @@
 # ssh-keygen -t ed25519 -C "paulalves@protonmail.com"
+# git clone ssh://git@paulalves.github.com/paulalves/repo
+# gh repo clone paulalves.github.com/paulalves/repo 
 
-Host github.com-paulalves
+Host paulalves.github.com
   HostName github.com
   IdentityFile ~/.ssh/paulalves_id
   IdentitiesOnly yes
 
-# ssh-keygen -t ed25519 -C "pa@[work].cc"
+# ssh-keygen -t ed25519 -C "pa@topo.cc"
+# git clone ssh://git@topo.github.com/toposolutions/repo
+# gh repo clone topo.github.com/toposolutions/repo 
 
-# Host github.com-[work]
-#   HostName github.com
-#   IdentityFile ~/.ssh/[work]_id
-#   IdentitiesOnly yes 
+Host topo.github.com
+  HostName github.com
+  IdentityFile ~/.ssh/topo_id
+  IdentitiesOnly yes

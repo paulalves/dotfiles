@@ -1,0 +1,45 @@
+[core]
+    editor = nvim
+    trustctime = false
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+[apply]
+    whitespace = fix
+
+[diff]
+    tool = bcomp 
+    renames = copies
+
+[difftool] 
+    prompt = false
+
+[difftool "bcomp"]
+    trustExitCode = true
+
+[help]
+    autocorrect = 1
+
+[merge]
+    log = true
+
+[push]
+    default = simple
+    autoSetupRemote = true
+
+[commit]
+    gpgsign = false
+
+[gpg]
+    program = /opt/homebrew/bin/gpg
+
+[filter "lfs"]
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+
+[includeIf "gitdir/i:~/workspace/topo/"]
+    path = ~/.topo.gitconfig
+
+[includeIf "gitdir/i:~/workspace/paulalves/"]
+    path = ~/.paulalves.gitconfig
