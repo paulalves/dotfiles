@@ -1,0 +1,5 @@
+SqlVersioner.CliTool
+Nuke.GlobalTool
+GitVersion.Tool
+dotnet-reportgenerator-globaltool
+dotnet-sonarscanner
