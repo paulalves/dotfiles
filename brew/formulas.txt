@@ -19,6 +19,7 @@ tmux
 tree
 wget
 gnu-sed
+gpg
 coreutils
 ffmpeg
 httpie
