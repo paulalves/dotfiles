@@ -13,14 +13,13 @@ ln -s ~/.dotfiles/nvim ~/.config/nvim
 ln -s ~/.dotfiles/zsh/zprofile ~/.zprofile
 ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/.dotfiles/dotnet/nuget.config ~/.nuget/NuGet/nuget.config
-
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/git/paulalves.gitconfig ~/.paulalves.gitconfig
 ln -s ~/.dotfiles/git/topo.gitconfig ~/.topo.gitconfig
-
 ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 ln -s ~/.dotfiles/alacritty ~/.config/alacritty
 ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 cp -vf ~/.dotfiles/fonts/NerdFonts/* ~/Library/Fonts/
 cp -vf ~/.dotfiles/fonts/Powerline/* ~/Library/Fonts/
