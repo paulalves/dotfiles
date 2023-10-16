@@ -1,4 +1,30 @@
-require('telescope').setup()
+require('telescope').setup {
+  defaults = {
+     vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '--ignore-file',
+      '.gitignore'
+    },
+    file_ignore_patterns = {
+      ".git/*",
+      "bin/*",
+      "obj/*",
+      "node_modules/*",
+      "dist/*",
+      "build/*",
+      "target/*",
+      "vendor/*",
+      "Pods/*",
+      ".*.swp",
+    }
+  }
+}
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})

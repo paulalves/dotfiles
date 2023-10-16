@@ -1,0 +1,10 @@
+# GITHUB NUGET PACKAGES
+GH_TOPO_PAT=
+GH_TOPO_USER=GitHub
+
+# DOTNET 
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+
+# JDK
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

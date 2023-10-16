@@ -1,1 +1,3 @@
-require("mason").setup()
+require("mason").setup { 
+  automatic_installation = true
+}

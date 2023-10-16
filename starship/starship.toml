@@ -16,6 +16,7 @@ format = " took [$duration]($style)"
 
 [directory]
 truncation_length = 5
+style = "white"
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 
 [git_branch]
@@ -77,11 +78,11 @@ style = "bold green"
 time_format = "%T"
 format = "🕙 $time($style) "
 style = "bright-white"
-disabled = false
+disabled = true
 
 [username]
-style_user = "bright-green bold"
-format = '[$user]($style) '
+style_user = "bright-green"
+format = '[$user]($style) at '
 show_always = true
 
 [nodejs]

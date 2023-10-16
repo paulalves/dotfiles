@@ -1,38 +1,39 @@
 # dotfiles
 
+Help for makefile
+
 ```bash
-git clone ssh://git@github.com/paulalves/dotfiles.git ~/.dotfiles/
-
-mkdir ~/.config/
-mkdir ~/.ssh/
-mkdir ~/.dotnet/
-mkdir -p ~/.nuget/NuGet
-
-ln -s ~/.dotfiles/htop ~/.config/htop
-ln -s ~/.dotfiles/nvim ~/.config/nvim
-ln -s ~/.dotfiles/zsh/zprofile ~/.zprofile
-ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc
-ln -s ~/.dotfiles/dotnet/nuget.config ~/.nuget/NuGet/nuget.config
-ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/git/paulalves.gitconfig ~/.paulalves.gitconfig
-ln -s ~/.dotfiles/git/topo.gitconfig ~/.topo.gitconfig
-ln -s ~/.dotfiles/ssh/config ~/.ssh/config
-ln -s ~/.dotfiles/alacritty ~/.config/alacritty
-ln -s ~/.dotfiles/starship/starship.toml ~/.config/starship.toml
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
-
-cp -vf ~/.dotfiles/fonts/NerdFonts/* ~/Library/Fonts/
-cp -vf ~/.dotfiles/fonts/Powerline/* ~/Library/Fonts/
-
-pushd ~/.dotfiles/brew 
-./brew.sh 
-popd 
-
-pushd ~/.dotfiles/mas
-./mas.sh 
-popd
-
-pushd ~/.dotfiles/dotnet 
-./dotnet.sh
-popd
+make help
 ```
+Output: 
+```
+Usage: make [target]
+
+Targets:
+
+  all: Installs all formulas, casks, fonts, app store apps and configs
+  brew-setup: Installs brew if not installed
+  brew-install: Installs brew
+
+  all-installs: Installs all formulas, casks, fonts and app store apps
+  	 install-formulas: Installs all formulas
+  	 install-casks: Installs all casks
+  	 install-fonts: Installs all fonts
+  	 install-appstore-apps: Installs all app store apps
+  	 install-dotnet-tools: Installs all dotnet global tools
+  	 install-dotnet-workloads: Installs all dotnet workloads
+
+  all-configs: Deploys all configs
+  	 pre-config: Creates config folders
+  	 config-zsh: Deploys zsh config
+  	 config-ssh: Deploys ssh config
+  	 config-alacritty: Deploys alacritty config
+  	 config-starship: Deploys starship config
+  	 config-tmux: Deploys tmux config
+  	 config-git: Deploys git config
+  	 config-htop: Deploys htop config
+  	 config-nvim: Deploys neovim config
+  	 config-dotnet: Deploys dotnet config
+```
+
+

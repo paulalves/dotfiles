@@ -9,6 +9,7 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
@@ -26,7 +27,6 @@ local plugins = {
   'christoomey/vim-tmux-navigator',
   'tpope/vim-fugitive',
   'tpope/vim-commentary',
-
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
   'L3MON4D3/LuaSnip',
@@ -35,6 +35,8 @@ local plugins = {
   "github/copilot.vim",
   "williamboman/mason.nvim",
   "neovim/nvim-lspconfig",
+  "kassio/neoterm",
+  "MunifTanjim/nui.nvim",
   "williamboman/mason-lspconfig.nvim",
   "glepnir/lspsaga.nvim",
   {
@@ -42,10 +44,14 @@ local plugins = {
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   },
-
   'mfussenegger/nvim-dap',
   'rcarriga/nvim-dap-ui',
   'simrat39/rust-tools.nvim',
+  'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim',
+      'nvim-tree/nvim-web-devicons',
+    },
 }
 
 local opts = {}

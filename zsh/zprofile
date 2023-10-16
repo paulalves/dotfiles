@@ -2,11 +2,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$PATH:/Users/paulalves/Library/Application Support/JetBrains/Toolbox/scripts"
 
-# nuget.config settings
-# !! replace empty strings by credentials !!
+export DNET_FLAGS_NO_CACHE="--no-cache"
+export DNET_FLAGS_VERBOSITY="--verbosity detailed"
+export DNET_FLAGS_RESTORE="--restore"
+export DNET_FLAGS_CONFIG="--configuration Debug"
 
-export GH_TOPO_USER=""
-export GH_TOPO_PAT=""
+alias dnet-c="dotnet clean ${DNET_FLAGS_VERBOSITY}"
+alias dnet-r="dotnet restore ${DNET_FLAGS_VERBOSITY}"
+alias dnet-b="dnet-c && dotnet build ${DNET_FLAGS_VERBOSITY} ${DNET_FLAGS_CONFIG} ${DNET_FLAGS_RESTORE} ${DNET_FLAGS_NO_CACHE}"
 
-export GH_PAULALVES_USER=""
-export GH_PAULALVES_PAT=""
+alias explore='joshuto $PWD'

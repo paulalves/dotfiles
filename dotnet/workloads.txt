@@ -1,0 +1,6 @@
+android
+ios
+maui
+wasm-tools
+wasm-tools-net7
+wasm-experimental
